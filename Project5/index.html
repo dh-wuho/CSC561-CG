@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Prog 5: Snake</title>
+
+        <script type="text/javascript" src="gl-matrix-min.js"></script>
+        <script type="text/javascript" src="setupWebGL.js"></script>
+        <script type="text/javascript" src="beginSnake.js"></script>
+        <style type="text/css">
+            #snakeCanvas {
+                position: absolute;
+                left: 27%;
+                z-index: 0;
+                padding: auto auto;
+            }
+            #snakeText {
+                position: absolute;
+                left: 27%;
+                background-color: transparent;  
+                z-index: 10;
+            }
+            #scoreText {
+                position: absolute;
+                right: 15%;
+            }
+            .sText {
+                font-size: 25px;
+            }
+            .instructions {
+                font-size: 20px;
+                margin: 3px auto;
+            }
+            #des0 {
+                position: fixed;
+                color: white;
+                margin-top: 150px;
+                margin-left: 420px;
+                font-size: 120px;
+            }
+            #des1 {
+                position: fixed;
+                color: white;
+                margin-top: 330px;
+                margin-left: 480px;
+                font-size: 35px;
+            }
+            #des2 {
+                position: fixed;
+                color: white;
+                margin-top: 150px;
+                margin-left: 420px;
+                font-size: 70px;
+            }
+            #des3 {
+                position: fixed;
+                color: white;
+                margin-top: 330px;
+                margin-left: 480px;
+                font-size: 30px;
+            }
+            .begin {
+                display: block;
+            }
+            .end {
+                display: none;
+            }
+        </style>
+    </head>
+
+    <body onload="main();">
+        <div id="mainDiv">
+            <canvas id="snakeCanvas" width="570" height="570"></canvas>
+            <div width="570" height="570">
+                <p id="des0" class="begin">SNAKE</p>
+                <p id="des1" class="begin">Press Space To Start</p>
+                <p id="des2" class="end">GAME OVER</p>
+                <p id="des3" class="end">Press Space To Continue</p>
+            </div>
+            <div id="scoreText" width="200" height="400">
+                <p class="sText">SCORE:<span class="sText" id="score"></span></p>
+                <p class="instructions">UP:    w</p>
+                <p class="instructions">DOWN:  s</p>
+                <p class="instructions">LEFT:  a</p>
+                <p class="instructions">RIGHT: d</p>
+            </div>
+        </div>
+        </body>
+</html>

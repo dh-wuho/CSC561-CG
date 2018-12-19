@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Prog 4: Texture and Transparency</title>
+
+    <script type="text/javascript" src="gl-matrix-min.js"></script>
+    <script type="text/javascript" src="texture.js"></script>
+    <style type="text/css">
+      #myWebGLCanvas {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 10;
+      }
+
+      #myImageCanvas {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        z-index: 0;
+      }
+    </style>
+  </head>
+
+  <body onload="main();">
+    <canvas id="myWebGLCanvas" width="512" height="512"></canvas>
+    <canvas id="myImageCanvas" width="512" height="512"></canvas>
+  </body>
+</html>
